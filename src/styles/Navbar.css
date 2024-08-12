@@ -1,0 +1,89 @@
+/* Navbar.css */
+.navbar {
+ 
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 7px rgba(27, 27, 27, 0.925);
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2%;
+  }
+  
+  /* From Uiverse.io by Yaseen549 */ 
+.input {
+  color: white;
+  border: 2px solid #eed199;
+  border-radius: 10px;
+  padding: 0.6rem 2rem;
+  background: transparent;
+  max-width: 100%;
+}
+
+.input:active {
+  box-shadow: 2px 2px 15px #f7b022de inset;
+}
+
+h1{
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.button {
+  width: 6rem;
+  color: whitesmoke;
+  border: 1px solid #88471d; 
+  border-bottom-width: 4px;
+  font-weight: 500;
+  overflow: hidden;
+  position: relative;
+  padding: 0.5rem 1rem; 
+  border-radius: 0.375rem; 
+  outline: none;
+  transition: brightness 0.3s, border-top-width 0.3s, border-bottom-width 0.3s, opacity 0.3s; 
+}
+
+.button:hover {
+  filter: brightness(1.5); 
+ 
+}
+
+.button:active {
+  opacity: 0.75; 
+}
+
+.button::before {
+  content: '';
+  background-color: #f87171; 
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3); 
+  position: absolute;
+  top: -150%;
+  left: 0;
+  width: 20rem;
+  height: 5px;
+  border-radius: 0.375rem; 
+  opacity: 0.5;
+  transition: top 0.5s;
+}
+
+.button:hover::before {
+  top: 150%;
+}
+
+@media (max-width: 1024px) {
+  .btn {
+    display: none !important;
+  }
+}
+
+.drop{
+  backdrop-filter: blur(10px);
+}
